@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Art 300px box */
+        /* width ?? */
+        /* margin + border + padding + content(300) */
+
+        /* border-box 
+        
+            border(左+右) + padding(左+右) + content = 300px
+        
+        */
+
+        /* 小練習一 */
+        /* 
+            做三box
+            width 500
+            pink
+            padding 50px
+            border 10px solid red
+
+            content-box
+            width 500
+            green
+            padding 50px
+            border 10px solid red
+
+            border-box
+            width 500
+            blue
+            padding 50px
+            border 10px solid red
+        
+        
+        */
+
+        .box {
+            box-sizing: border-box;
+            
+
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            /* padding-top: 20px; */
+            /* padding-bottom: 20px; */
+            /* padding-right: 20px; */
+            /* padding-left: 20px; */
+            /* padding: 10px 50px;      */
+            padding: 100px 50px; 
+            
+            /* border: 5px solid red; */
+            /* margin-top: 30px;
+            margin-left: 100px; */
+            /* 左右置中 */
+            margin: 0px auto;
+            /* shorthand */
+            /* 上 右 下 左 */
+            /* margin: 10px 20px 30px 40px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>padding</h3>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam totam distinctio tenetur consectetur culpa
+        maiores delectus temporibus doloremque possimus.
+    </div>
+    <!-- margin -->
+    <!-- padding -->
+</body>
+
+</html>

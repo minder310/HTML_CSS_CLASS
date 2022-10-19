@@ -12,9 +12,51 @@
             height: 100px;
         }
 
-        img{
+        img {
             width: 100px;
             height: 100px;
+        }
+
+        span {
+            /* display: inline-block; */
+            color: red;
+            width: 100px;
+        }
+
+        .myDiv>p::before {
+            content: "$ ";
+        }
+
+        .myDiv>p::after {
+            content: " 元";
+        }
+
+        /* a{
+            display: inline-block;
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        } */
+        .myDiv123{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        ul{
+            background-color: lightblue;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            width: 70%;
+            list-style-type: none;
+        }
+        ul > li{
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -31,9 +73,62 @@
     <button type="button">button</button>
     <button type="button">button</button>
     <br>
-    <img src="https://picsum.photos/id/237/200/300" alt="Pineapple" >
-    <img src="https://picsum.photos/id/237/200/300" alt="Pineapple" >
-    <img src="https://picsum.photos/id/237/200/300" alt="Pineapple" >
+    <img src="https://picsum.photos/id/237/200/300" alt="Pineapple">
+    <img src="https://picsum.photos/id/237/200/300" alt="Pineapple">
+    <img src="https://picsum.photos/id/237/200/300" alt="Pineapple">
+
+    <hr>
+
+    <!-- display -->
+    <!-- inline -->
+    <h3>display : inline</h3>
+    <p>a , span , label , ::before , ::after</p>
+    <p>1.不會換行</p>
+    <p>2.不可以設定width,height</p>
+    <p>3.會有空格</p>
+    <p>Lorem <span>55688</span> ipsum dolor sit amet.</p>
+    <a href="">aaa</a>
+    <a href="">bbb</a>
+    <a href="">ccc</a>
+
+    <div class="myDiv">
+        <p>1000</p>
+        <p>2000</p>
+        <p>3000</p>
+    </div>
+    
+    <!-- 練習 a tag 設定width 100px height 100px ? -->
+    <hr>
+
+    <!-- display -->
+    <!-- block -->
+    <p>div , p , h1-h6 , header, nav, section , br ,li , ul ,ol .....</p>
+    <p>1.會換行</p>
+    <p>2.可以設定width,height</p>
+    <div class="myDiv123">123</div>
+    <div class="myDiv456">456</div>
+
+  
+
+    <ul class="nav">
+        <li><a href="">111</a></li>
+        <li><a href="">222</a></li>
+        <li><a href="">333</a></li>
+        <li><a href="">444</a></li>
+    </ul>
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <!-- ul li unorder-->
+    <!-- ol li order-->
+
+    
 
 </body>
 

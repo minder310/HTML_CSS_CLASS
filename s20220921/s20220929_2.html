@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box示範</title> 
+    <style>
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: #ccc;
+            overflow: scroll;/*超出範圍時變成可拉是選單。hidden 指超出直接隱藏。*/   
+        }
+        .continer{
+            width: 80%;
+            margin: 0 auto;
+        }
+        table,tr,td{
+            overflow: scroll;
+        }
+        </style>
+</head>
+<body>
+    <div class="continer">
+        <table>
+            <tr>
+                <th>th</th>
+            </tr>
+            <tr>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nisi aliquam est quas veniam deleniti natus, eveniet odit minima consectetur laborum maiores soluta numquam ex. Error ut provident ab reiciendis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto esse quaerat vel illo dolor sint provident, quasi natus, obcaecati voluptas repellendus, quod voluptates corrupti. Earum voluptatum quibusdam possimus voluptatibus voluptates.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi illum ipsa dicta placeat perspiciatis quam quas quia odit maiores, eligendi fuga dolore inventore suscipit adipisci facilis alias possimus distinctio repudiandae?
+    </div>
+</body>
+</html>

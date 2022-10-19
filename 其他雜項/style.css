@@ -1,0 +1,55 @@
+#dailycss_20200803-2 {
+    background-color: #003444;
+    margin: 0;
+    padding: 0;
+}
+
+#dailycss_20200803-2 .container {
+    margin: 20px auto;
+    width: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#dailycss_20200803-2 .imageBox {
+    position: relative;
+    overflow: hidden;
+}
+
+#dailycss_20200803-2 .imageBox img {
+    width: 100%;
+    transition: 1s;
+}
+
+#dailycss_20200803-2 .textBox {
+    position: absolute; 
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(255, 0, 0, .9);
+    transition: .5s;
+}
+
+#dailycss_20200803-2 .textBox h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+}
+
+#dailycss_20200803-2 .imageBox:hover .textBox {
+    left: 0;
+
+}
+
+#dailycss_20200803-2 .imageBox:hover img {
+    transform: scale(1.2);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: black;
+        }
+        input:hover{
+            width: 300px;
+        }
+        .flex{
+            display: flex;
+            width: 1000px;
+            flex-wrap: wrap;
+        }
+        .inbox1{
+            height: 200px;
+            flex-basis: 30%;
+            border: 1px dotted black;
+            justify-content: center;
+            text-align: center;
+        }
+        .inbox2{
+            height: 200px;
+            flex-basis: 69%;
+            border: 1px dotted black;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>name</td>
+            <td><input type="text" width="100%"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="flex">
+        <div class="inbox1">name</div>
+        <div class="inbox2"><input type="text"></div>
+        <div class="inbox1"></div>
+        <div class="inbox2"></div>
+        <div class="inbox1"></div>
+        <div class="inbox2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            flex-direction row 橫 column 直的
+            flex-wrap 超過container大小會換行
+            justify-content flex-direction row center 主軸
+            align-items: 非flex-d非flex-direction column center; 次軸
+
+        */
+        .container{
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: wrap;
+            justify-content: center;
+            /* justify-content: space-between; */
+            align-items: center;
+            /* flex-direction: column;  */
+            width: 900px;
+            height: 500px;
+            background-color: lightskyblue;
+            margin: 0 auto;
+        }
+        .item{
+            width: 250px;
+            height: 250px;
+            background-color: lightgray;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+    
+<body>
+    <div class="container">
+        <div class="item item1">111</div>
+        <div class="item item2">222</div>
+        <div class="item item3">333</div>
+        
+    </div>
+
+    <!-- 練習 -->
+    <!-- 建立flexbox -->
+    <!-- container width 1200  height 1000px-->
+    <!-- item width 250 height 250px-->
+    <!-- 建立10 item -->
+
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column; */
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+
+            width: 1200px;
+            height: 1000px;
+            background-color: lightskyblue;
+            margin: 0 auto;
+        }
+        .item{
+            width: 250px;
+            height: 250px;
+            background: #ccc;
+            text-align: center;
+            /* padding: 100px; */
+            /* margin-left: 10px ; */
+
+        }
+        /* contain 全部 */
+        /* cover 撐大 */
+        img{
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            /* background-size: contain; */
+        }
+        .item2{
+            /* 看flex-direction row or column */
+            flex-basis: 500px;
+            /* width: 600px; */
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 練習 -->
+    <!-- 建立flexbox -->
+    <!-- container width 1200  height 1000px-->
+    <!-- item width 250 height 250px-->
+    <!-- 建立10 item -->
+
+    <!-- 練習 -->
+    <!-- flexbox https://flexboxfroggy.com/#zh-tw -->
+
+    <div class="container">
+        <div class="item">
+            <h3>1</h3>
+            <img src="https://picsum.photos/id/1084/320/320" alt="">
+        </div>
+        <div class="item item2">
+            <h3>2</h3>
+            <img src="https://picsum.photos/id/1011/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>3</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>4</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>5</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>6</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>7</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>8</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>9</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>10</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>11</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        <div class="item">
+            <h3>12</h3>
+            <img src="https://picsum.photos/id/237/100/100" alt="">
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
