@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+
+        .box1,.box2,.box3,.box4,.box5{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            
+        }
+        .box1{
+            background-color: red;
+            top:-50px;
+        }
+        .box2{
+            background-color: greenyellow;
+            top:-100px;
+        }
+        .box3{
+            background-color: blue;
+            top:-150px;
+            /* z-index:可以宣告層數，當宣告越高越上面。 */
+            z-index: 1;
+        }
+        .box4{
+            
+            background-color: orange;
+            top:-200px;
+        }
+        .box5{
+            background-color: purple;
+            top:-250px;
+            
+        }
+        .box6,.box7,.box8,.box9,.box10{
+            width: 100px;
+            height: 100px;
+            /* position: relative; */
+            position: absolute;
+            
+        }
+        .box6{
+            background-color: red;
+            top: 0px;
+
+        }
+        .box7{
+            background-color: greenyellow;
+            top: 50px;
+            left:25px;
+            z-index: 5;
+        }
+        .box8{
+            background-color: blue;
+            top:100px;
+            left: 50px;
+            z-index: 10;
+        }
+        .box9{
+            
+            background-color: orange;
+            top:150px;
+            left: 25px;
+            z-index: 5;
+        }
+        .box10{
+            background-color: purple;
+            top:200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div style="position:relative">
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+        
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: '標楷體';
+}
+
+.main {
+    display: flex;
+    width: 1024px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+
+body>*:not(.aside,.section),
+aside>*,
+section>*{
+    border: 1px solid lightgray;
+}
+
+.top {
+    flex-basis: 1000px;
+    height: 65px;
+}
+
+/* left */
+.aside {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+}
+
+.menu {
+    flex-wrap: wrap;
+    flex-basis: calc(100% - 25px);
+}
+.menu>a{
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    width: 200px;
+    height: 35px;
+    background-image: url("./image/menu1.png");
+    padding-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+.menu>a:hover{
+    
+    background-image: url("./image/menu2.png");
+}
+.menu-header{
+    /* 社團介紹 */
+    font-weight: 500px;
+    font-size: 24px;
+    color: #ff00ff;
+    text-decoration: underline;
+    margin: 20px auto;
+}
+.update{
+    flex-basis: 25px;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* right */
+.section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(1000px - 215px);
+}
+.marquee{
+    flex-basis: 29px;
+    font-size: 24px;
+    color: #0000ff;
+}
+marquee{
+    width: 770px;
+    height: 29px;
+}
+.content{
+    flex-basis: calc(100% - 29px);
+}
+
+.footer {
+    flex-basis: 1000px;
+    height: 20px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
