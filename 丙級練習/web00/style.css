@@ -1,0 +1,15 @@
+*{
+        font-family: '標楷體';
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+}
+body{
+    background-image: url(./images/0101.jpg);
+}
+table {
+    width: 100%;
+}
+.h1hd{
+    font-size: 18px;
+}
